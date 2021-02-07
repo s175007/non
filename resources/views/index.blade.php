@@ -106,7 +106,7 @@
                 <div class="featured__product">
                     <div class="featured__box">
                         <div class="featured__new">NEW</div>
-                        <img src="{{ asset('images/trungnonchaytoi.png') }}" alt="" class="featured__img">
+                        <img src="{{ asset('images/Trungnonchaytoi.png') }}" alt="" class="featured__img">
                     </div>
                     <div class="featured__data">
                         <h3 class="featured__name">Trứng gà non cháy tỏi</h3>

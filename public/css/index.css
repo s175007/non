@@ -237,9 +237,17 @@ img {
 .home__img {
     position: absolute;
     right: 0;
-    bottom: 3%;
-    width: 420px;
+    bottom: 1%;
+    width: 300px;
     /* text-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2); */
+}
+
+.featured__img{
+    width: 150px;
+}
+
+.new__image{
+    width: 150px;
 }
 
 /* button */
