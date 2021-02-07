@@ -16,7 +16,7 @@
                         <div class="box">
                             <!--img-box---------->
                             <div class="slide-img">
-                                <img alt="1" src="{{ Storage::url($food->image) }}">
+                                <img alt="1" src="{{ asset ('upload/'.$food->image)}}">
                                 <!--overlayer---------->
                                 {{-- <div class="overlay">
                                     <!--buy-btn------>

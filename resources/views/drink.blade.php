@@ -15,7 +15,7 @@
                         <div class="box">
                             <!--img-box---------->
                             <div class="slide-img">
-                                <img alt="1" src="{{ Storage::url($drink->image) }}">
+                                <img class="img-fluid" alt="dang cap nhat" src="{{ asset ('upload/'.$drink->image)}}">
                                 <!--overlayer---------->
                                 {{-- <div class="overlay">
                                     <!--buy-btn------>

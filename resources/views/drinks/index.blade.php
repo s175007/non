@@ -64,7 +64,7 @@
                             @endif
                         </td>
                         <td>
-                            <img src="{{ Storage::url($drink->image) }}" class="img-fluid" alt="hi">
+                            <img class="img-fluid" alt="dang cap nhat" src="{{ asset ('upload/'.$drink->image)}}">
                         </td>
 
                         <td>

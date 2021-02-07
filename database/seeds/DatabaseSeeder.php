@@ -14,25 +14,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        for ($i = 0; $i < 20; $i++){
-            DB::table('users')->insert([
-                'username' => "User" . ($i + 1),
-                'password' => Hash::make('123456'),
-            ]);
-        }
-
-        for ($i = 0; $i < 20; $i++){
-            DB::table('posts')->insert([
-                'name' => "Name" . ($i + 1),
-                'content' => "Day la content thu" . ($i +1),
-                'image' => "text.txt",
-                'user_id' => ($i + 1),
-            ]);
-        }
 
         DB::table('admins')->insert([
             'username' => "Admin",
-            'password' => Hash::make('123456'),
+            'password' => Hash::make('Nonbetonamu'),
         ]);
 
         // Them loai thuc an
@@ -91,7 +76,7 @@ class DatabaseSeeder extends Seeder
             'foodnamevn' => "Chả lụa",
             'foodnamejp' => "ベトナムのハム",
             'price' => "480",
-            'image' => "images/1v3ova1I2VqBKvmJXD6JejY2NUaeMbaXnXK59Jop.jpeg",
+            'image' => "",
             'status' => "1",
         ]);
 

@@ -44,7 +44,6 @@ class DrinkController extends Controller
     public function store(Request $request)
     {
         Validator::make($request->all(),Drink::$rule)->validate();
-        $path = Storage::disk('public')->put('images', $request->file('image'));
 
         $drink = new Drink();
         $drink->drink_type = $request->drink_types;
@@ -56,8 +55,16 @@ class DrinkController extends Controller
         }else{
             $drink->status = 0;
         }
-        // $food->status = $request->has('status');
-        $drink->image = $path;
+        if($request->hasFile('image')){
+            $file = $request->file('image');
+            $extension = $file->getClientOriginalExtension();
+            $filename = time() . '.' . $extension;
+            $file->move('upload', $filename);
+            $drink->image = $filename;
+        } else {
+            return $request;
+            $drink->image = "";
+        }
         $drink->save();
         if(!empty($drink)){
             return Redirect::route('admin.drinks.index')->with(['message'=> 'Tạo thành công']);
@@ -116,8 +123,14 @@ class DrinkController extends Controller
                 $drink->status = 0;
             }
             if($request->hasFile('image')){
-                $path = Storage::disk('public')->put('images', $request->file('image'));
-                $drink->image = $path;
+                $file = $request->file('image');
+                $extension = $file->getClientOriginalExtension();
+                $filename = time() . '.' . $extension;
+                $file->move('upload', $filename);
+                $drink->image = $filename;
+            } else {
+                return $request;
+                $drink->image = "";
             }
             $drink->save();
 

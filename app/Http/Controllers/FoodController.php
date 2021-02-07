@@ -48,7 +48,6 @@ class FoodController extends Controller
         // }
         // return 'khong co file';
         Validator::make($request->all(),Food::$rule)->validate();
-        $path = Storage::disk('public')->put('images', $request->file('image'));
 
         $food = new Food();
         $food->foodtype = $request->food_types;
@@ -61,8 +60,17 @@ class FoodController extends Controller
             $food->status = 0;
         }
         // $food->status = $request->has('status');
-        $food->image = $path;
-        // return $food;
+        if($request->hasFile('image')){
+            $file = $request->file('image');
+            $extension = $file->getClientOriginalExtension();
+            $filename = time() . '.' . $extension;
+            $file->move('upload', $filename);
+            $food->image = $filename;
+        } else {
+            return $request;
+            $food->image = "";
+        }
+
         $food->save();
         if(!empty($food)){
             return Redirect::route('admin.foods.index')->with(['message'=> 'Tạo thành công']);
@@ -122,8 +130,14 @@ class FoodController extends Controller
                 $food->status = 0;
             }
             if($request->hasFile('image')){
-                $path = Storage::disk('public')->put('images', $request->file('image'));
-                $food->image = $path;
+                $file = $request->file('image');
+                $extension = $file->getClientOriginalExtension();
+                $filename = time() . '.' . $extension;
+                $file->move('upload', $filename);
+                $food->image = $filename;
+            } else {
+                return $request;
+                $food->image = "";
             }
             $food->save();
         }
