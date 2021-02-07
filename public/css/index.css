@@ -243,10 +243,12 @@ img {
 }
 
 .featured__img{
+    height: 150px;
     width: 150px;
 }
 
 .new__image{
+    height: 200px;
     width: 150px;
 }
 
