@@ -31,7 +31,7 @@ class Food extends Model
         'foodnamevn' => 'required',
         'foodnamejp' => 'required',
         'price' => 'required',
-        'image' => 'mimes:jpeg,jpg,png,svg|required|max:20000',
+        'image' => 'required|max:20000',
     ];
 
     public static $rule_update_missing_image = [

@@ -31,7 +31,7 @@ class Drink extends Model
         'drink_name_vn' => 'required',
         'drink_name_jp' => 'required',
         'price' => 'required',
-        'image' => 'mimes:jpeg,jpg,png,svg|required|max:20000',
+        'image' => 'required|max:20000',
     ];
 
     public static $rule_update_missing_image = [
