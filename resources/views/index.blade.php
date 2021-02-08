@@ -20,7 +20,11 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <img src="{{ asset('images/LOGO.png') }}" alt="" class="nav__logo">
+
+                <img src="{{ asset('images/LOGO.png') }}" alt="" class="" style="
+    width: 40px;
+    margin-top: 7px;
+">
             </div>
 
             <div class="nav__menu" id="nav-menu">
@@ -29,7 +33,8 @@
                             chủ</a></li>
                     <li class="nav__item"><a key="food" href="{{ route('menu') }}" class="nav__link tr">Xem menu</a>
                     </li>
-                    <li class="nav__item"><a key="drink" href="{{ route('drink') }}" class="nav__link tr">Nước uống</a>
+                    <li class="nav__item"><a key="drink" href="{{ route('drink') }}" class="nav__link tr">Nước
+                            uống</a>
                     </li>
                     <li class="nav__item"><a key="table" href="{{ route('table') }}" class="nav__link tr">Bàn</a></li>
                     <li class="nav__item"><a key="contacts" href="{{ route('contacts') }}" class="nav__link tr">Địa

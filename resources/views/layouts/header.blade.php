@@ -34,18 +34,28 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <img src="{{ asset('images/LOGO.png') }}" alt="" class="nav__logo" style="width: 40px;margin-top: 7px;">
+
+                <img src="{{ asset('images/LOGO.png') }}" alt="" class="" style="
+    width: 40px;
+    margin-top: 7px;
+">
             </div>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a key="home" href="{{ route('index') }}" class="nav__link active tr">Trang chủ</a></li>
-                    <li class="nav__item"><a key="food" href="{{ route('menu') }}" class="nav__link tr">Xem menu</a></li>
-                    <li class="nav__item"><a key="drink" href="{{ route('drink') }}" class="nav__link tr">Nước uống</a></li>
-                    <li class="nav__item"><a key="table" href="{{ route('table') }}" class="nav__link tr">Bàn</a></li>
-                    <li class="nav__item"><a key="contacts" href="{{ route('contacts') }}" class="nav__link tr">Địa chỉ</a></li>
+                    <li class="nav__item"><a key="home" href="{{ route('index') }}" class="nav__link active tr">Trang
+                            chủ</a></li>
+                    <li class="nav__item"><a key="food" href="{{ route('menu') }}" class="nav__link tr">Xem menu</a>
+                    </li>
+                    <li class="nav__item"><a key="drink" href="{{ route('drink') }}" class="nav__link tr">Nước
+                            uống</a></li>
+                    <li class="nav__item"><a key="table" href="{{ route('table') }}" class="nav__link tr">Bàn</a>
+                    </li>
+                    <li class="nav__item"><a key="contacts" href="{{ route('contacts') }}" class="nav__link tr">Địa
+                            chỉ</a></li>
                     <li class="nav__item"><a key="follow" href="#suscribed" class="nav__link tr">Theo dõi</a></li>
-                    <li class="nav__item"><a key="admin" href="{{ route('admins.login') }}" class="nav__link tr">Quản lí</a></li>
+                    <li class="nav__item"><a key="admin" href="{{ route('admins.login') }}" class="nav__link tr">Quản
+                            lí</a></li>
                     <li class="nav__item">
                         <div class="lang_switcher">
                             <button id="vn" class="lang nav__button">VN</button>
@@ -53,9 +63,9 @@
                         </div>
                     </li>
                     <li class="nav__item">
-                    <div class="theme__toggle">
-                    <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
-                    </div>
+                        <div class="theme__toggle">
+                            <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -113,22 +123,23 @@
     <script>
         var checkbox = document.querySelector("input[name=theme]");
 
-checkbox.addEventListener( 'change', function() {
-    if(this.checked) {
-        trans()
-        document.documentElement.setAttribute('data-theme', 'dark')
-    } else {
-        trans()
-        document.documentElement.setAttribute('data-theme', 'light')
-    }
-});
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                trans()
+                document.documentElement.setAttribute('data-theme', 'dark')
+            } else {
+                trans()
+                document.documentElement.setAttribute('data-theme', 'light')
+            }
+        });
 
-let trans = () => {
-    document.documentElement.classList.add('transition');
-    window.setTimeout(() => {
-        document.documentElement.classList.remove('transition')
-    }, 1000)
-}
+        let trans = () => {
+            document.documentElement.classList.add('transition');
+            window.setTimeout(() => {
+                document.documentElement.classList.remove('transition')
+            }, 1000)
+        }
+
     </script>
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
