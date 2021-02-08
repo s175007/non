@@ -180,12 +180,6 @@ img {
     color: var(--first-color);
 }
 
-.nav__logo{
-    height: auto;
-    width: 65px;
-    padding-top: 7px;
-}
-
 .nav__cart {
     font-size: 1.5rem;
     margin-right: var(--mb-2);
