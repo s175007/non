@@ -20,7 +20,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <img src="{{ asset('images/logo.png') }}" alt="" class="nav__logo">
+                <img src="{{ asset('images/LOGO.png') }}" alt="" class="nav__logo">
             </div>
 
             <div class="nav__menu" id="nav-menu">
