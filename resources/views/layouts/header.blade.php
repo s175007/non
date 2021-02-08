@@ -34,7 +34,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <img src="{{ asset('images/LOGO.png') }}" alt="" class="nav__logo">
+                <img src="{{ asset('images/LOGO.png') }}" alt="" class="nav__logo" style="width: 40px;margin-top: 7px;">
             </div>
 
             <div class="nav__menu" id="nav-menu">
