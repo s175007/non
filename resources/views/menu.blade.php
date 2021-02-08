@@ -28,17 +28,17 @@
                             <div class="detail-box">
                                 <!--type-------->
                                 <div class="type">
-                                    <a href="#">{{ $food->foodnamevn }}</a>
+                                    <a href="">{{ $food->foodnamevn }}</a>
                                     <span>{{ $food->foodnamejp }}</span>
                                 </div>
                                 <!--price-------->
-                                <a href="#" class="price">{{ $food->price }}円</a>
+                                <a href="" class="price">{{ $food->price }}円</a>
 
                             </div>
                             @else
                             <div class="detail-box">
                                 <div class="type">
-                                    <a href="#">{{ $food->foodnamevn }}</a>
+                                    <a href="">{{ $food->foodnamevn }}</a>
                                     <span>{{ $food->foodnamejp }}</span>
                                 </div>
                                 <!--price-------->

@@ -26,11 +26,11 @@
                                 <div class="detail-box">
                                     <!--type-------->
                                     <div class="type">
-                                        <a href="#">{{ $drink->drink_name_vn }}</a>
+                                        <a href="">{{ $drink->drink_name_vn }}</a>
                                         <span>{{ $drink->drink_name_jp }}</span>
                                     </div>
                                     @if ($drink->status)
-                                        <a href="#" class="price">{{ $drink->price }}円</a>
+                                        <a href="" class="price">{{ $drink->price }}円</a>
                                     @else
                                         <a style="color: #d2321e">Hết</a>
                                     @endif
