@@ -61,9 +61,6 @@ class DrinkController extends Controller
             $filename = time() . '.' . $extension;
             $file->move('upload', $filename);
             $drink->image = $filename;
-        } else {
-            return $request;
-            $drink->image = "";
         }
         $drink->save();
         if(!empty($drink)){
@@ -128,9 +125,6 @@ class DrinkController extends Controller
                 $filename = time() . '.' . $extension;
                 $file->move('upload', $filename);
                 $drink->image = $filename;
-            } else {
-                return $request;
-                $drink->image = "";
             }
             $drink->save();
 

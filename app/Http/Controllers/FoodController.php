@@ -66,9 +66,6 @@ class FoodController extends Controller
             $filename = time() . '.' . $extension;
             $file->move('upload', $filename);
             $food->image = $filename;
-        } else {
-            return $request;
-            $food->image = "";
         }
 
         $food->save();
@@ -135,9 +132,6 @@ class FoodController extends Controller
                 $filename = time() . '.' . $extension;
                 $file->move('upload', $filename);
                 $food->image = $filename;
-            } else {
-                return $request;
-                $food->image = "";
             }
             $food->save();
         }

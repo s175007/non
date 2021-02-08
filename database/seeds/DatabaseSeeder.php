@@ -51,11 +51,11 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('food_types')->insert([
-            'name' => "Mì",
+            'name' => "Bún, Phở",
         ]);
 
         DB::table('food_types')->insert([
-            'name' => "Cơm",
+            'name' => "Cơm, Mì",
         ]);
 
         DB::table('food_types')->insert([
@@ -71,21 +71,40 @@ class DatabaseSeeder extends Seeder
         ]);
 
         //Thêm thức ăn
+
         DB::table('foods')->insert([
             'foodtype' => "1",
-            'foodnamevn' => "Chả lụa",
-            'foodnamejp' => "ベトナムのハム",
-            'price' => "480",
-            'image' => "",
+            'foodnamevn' => "Ốc om chuối",
+            'foodnamejp' => "タニシバナナ煮込み",
+            'price' => "850",
+            'image' => "ocom.png",
             'status' => "1",
         ]);
 
         DB::table('foods')->insert([
-            'foodtype' => "2",
-            'foodnamevn' => "Mẹt bò",
-            'foodnamejp' => "牛セット",
-            'price' => "1980",
-            'image' => "images/1nvwNfOGbHcFq4iVAzMXGq0dzTdRtVoo1kRANFS7.jpeg",
+            'foodtype' => "1",
+            'foodnamevn' => "Ốc xào sả ớt",
+            'foodnamejp' => "タニシレモングラス",
+            'price' => "680",
+            'image' => "ocsaot.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "1",
+            'foodnamevn' => "Ốc nhồi",
+            'foodnamejp' => "タニシ蒸",
+            'price' => "850",
+            'image' => "ocnhoi.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "1",
+            'foodnamevn' => "Cá hấp",
+            'foodnamejp' => "蒸魚",
+            'price' => "1280",
+            'image' => "cahap.png",
             'status' => "1",
         ]);
 
@@ -94,115 +113,85 @@ class DatabaseSeeder extends Seeder
             'foodnamevn' => "Mẹt heo",
             'foodnamejp' => "豚セット",
             'price' => "1980",
-            'image' => "images/vB4GJGDT5CgeL1TS4vJkpbbnsYEMFILZHle7fgTj.jpeg",
+            'image' => "metheo.png",
             'status' => "1",
         ]);
 
+
+
         DB::table('foods')->insert([
-            'foodtype' => "10",
-            'foodnamevn' => "Gỏi sứa",
-            'foodnamejp' => "クラゲサラダ",
-            'price' => "780",
-            'image' => "images/CHI98OGodjJvb9Ns8W9udI2XHynGfpdVLui1wb9Z.jpeg",
+            'foodtype' => "2",
+            'foodnamevn' => "Mẹt bò",
+            'foodnamejp' => "牛セット",
+            'price' => "1980",
+            'image' => "metbo.png",
             'status' => "1",
         ]);
 
-        DB::table('foods')->insert([
-            'foodtype' => "8",
-            'foodnamevn' => "Bún bò giò",
-            'foodnamejp' => "ブンボー",
-            'price' => "780",
-            'image' => "images/cSArAgrlVtwQS1Vaa1d1ac7TjEAj5IbYNeCx1Tnl.jpeg",
-            'status' => "1",
-        ]);
 
-        DB::table('foods')->insert([
-            'foodtype' => "8",
-            'foodnamevn' => "Mì xào hải sản",
-            'foodnamejp' => "海鮮焼きそば",
-            'price' => "680",
-            'image' => "images/fSAKTCnu4ftPtU4zY2l8UFyhhQr8T5ZJbT90VMe0.jpeg",
-            'status' => "1",
-        ]);
-
-        DB::table('foods')->insert([
-            'foodtype' => "1",
-            'foodnamevn' => "Ốc xào sả ớt",
-            'foodnamejp' => "タニシレモングラス",
-            'price' => "780",
-            'image' => "images/GD22L88lxEWSjB9D514vYKSwlu3FC9FQufxEJtLv.jpeg",
-            'status' => "1",
-        ]);
-
-        DB::table('foods')->insert([
-            'foodtype' => "3",
-            'foodnamevn' => "Trứng non cháy tỏi",
-            'foodnamejp' => "卵の子ニンニクソース炒め",
-            'price' => "680",
-            'image' => "images/Ifsn9J7S58rlzVBTV33hq0QjXbgGamwnC5loMclh.jpeg",
-            'status' => "1",
-        ]);
-
-        DB::table('foods')->insert([
-            'foodtype' => "7",
-            'foodnamevn' => "Sò lụa xào sả",
-            'foodnamejp' => "アサリレモングラス炒め",
-            'price' => "480",
-            'image' => "images/il1F1GhaL1OzVbuuWZOE7zZ3mVA4JWVZEMH5bGhY.jpeg",
-            'status' => "1",
-        ]);
-
-        DB::table('foods')->insert([
-            'foodtype' => "7",
-            'foodnamevn' => "Râu mực chiên",
-            'foodnamejp' => "げそから",
-            'price' => "480",
-            'image' => "images/iLcxhVevYu7aDzxGKa1ZIkEm2Gy7Q2FAtjI8g23B.jpeg",
-            'status' => "1",
-        ]);
-
-        DB::table('foods')->insert([
-            'foodtype' => "9",
-            'foodnamevn' => "Cơm sườn",
-            'foodnamejp' => "豚ニンニクソース炒めご飯",
-            'price' => "780",
-            'image' => "images/IvS6AmSHOlmQseTVByUC5hCScGIgIlF7jmxZR9gH.jpeg",
-            'status' => "1",
-        ]);
-
-        DB::table('foods')->insert([
-            'foodtype' => "8",
-            'foodnamevn' => "Bún thịt nướng",
-            'foodnamejp' => "焼肉ビーフン",
-            'price' => "680",
-            'image' => "images/iwlYdRhn7WdrcEAncl2ZBMkN3uWP3kID2X3ESdZ2.jpeg",
-            'status' => "1",
-        ]);
-
-        DB::table('foods')->insert([
-            'foodtype' => "6",
-            'foodnamevn' => "Đuôi heo hon",
-            'foodnamejp' => "豚テールレモングラス煮込み",
-            'price' => "540",
-            'image' => "images/kaXxuu7biZMJD1jXTVtaCX8QcEfkYV5Ftz2lNJFa.jpeg",
-            'status' => "1",
-        ]);
 
         DB::table('foods')->insert([
             'foodtype' => "2",
             'foodnamevn' => "Mẹt hải sản",
             'foodnamejp' => "海鮮セット",
             'price' => "1980",
-            'image' => "images/kfXKspSEZ4fS5xEuyIjVyBOHiAV0L7uSAYyyNH94.jpeg",
+            'image' => "methaisan.png",
+            'status' => "1",
+        ]);
+
+
+        DB::table('foods')->insert([
+            'foodtype' => "2",
+            'foodnamevn' => "Mẹt gà",
+            'foodnamejp' => "鳥セット",
+            'price' => "1980",
+            'image' => "metga.png",
             'status' => "1",
         ]);
 
         DB::table('foods')->insert([
-            'foodtype' => "6",
-            'foodnamevn' => "Heo luộc cuốn bánh tráng",
-            'foodnamejp' => "豚肉茹でると野菜巻き",
-            'price' => "980",
-            'image' => "images/klx2MnOCodY5ESZdkpu9Fw9yIY3kzTwQEnlsh2ff.jpeg",
+            'foodtype' => "2",
+            'foodnamevn' => "Mẹt heo luộc",
+            'foodnamejp' => "豚茹でセット",
+            'price' => "1980",
+            'image' => "heoluoc.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "2",
+            'foodnamevn' => "Mẹt vịt",
+            'foodnamejp' => "ダックセット",
+            'price' => "1980",
+            'image' => "metvit.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "2",
+            'foodnamevn' => "Mẹt bún đậu",
+            'foodnamejp' => "ブンダウマムトム",
+            'price' => "1980",
+            'image' => "metdau.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "2",
+            'foodnamevn' => "Mẹt chiên",
+            'foodnamejp' => "揚げセット",
+            'price' => "1980",
+            'image' => "metchien.png",
+            'status' => "1",
+        ]);
+
+
+        DB::table('foods')->insert([
+            'foodtype' => "3",
+            'foodnamevn' => "Trứng non cháy tỏi",
+            'foodnamejp' => "卵の子ニンニクソース炒め",
+            'price' => "680",
+            'image' => "trungnon.png",
             'status' => "1",
         ]);
 
@@ -210,17 +199,71 @@ class DatabaseSeeder extends Seeder
             'foodtype' => "3",
             'foodnamevn' => "Gà luộc",
             'foodnamejp' => "鳥茹でる",
-            'price' => "480",
-            'image' => "images/KMP95GzhtjsXPMRI6gRiuxLe05x05Vj6CcqwNBR6.jpeg",
+            'price' => "1100",
+            'image' => "galuoc.png",
             'status' => "1",
         ]);
 
         DB::table('foods')->insert([
-            'foodtype' => "1",
-            'foodnamevn' => "Nồi trường",
-            'foodnamejp' => "豚のコブクロ",
-            'price' => "680",
-            'image' => "images/KYn4GByYh4mj2e3GHGnBu3ndLQW3BXOZU2UU41QW.jpeg",
+            'foodtype' => "3",
+            'foodnamevn' => "Chân gà",
+            'foodnamejp' => "鳥足",
+            'price' => "580",
+            'image' => "changa.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "3",
+            'foodnamevn' => "Sụn gà chiên",
+            'foodnamejp' => "軟骨揚げ",
+            'price' => "580",
+            'image' => "sungachien.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "3",
+            'foodnamevn' => "Gà hon",
+            'foodnamejp' => "鳥レモングラス煮込み",
+            'price' => "580",
+            'image' => "gahon.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "3",
+            'foodnamevn' => "Gà xé bóp",
+            'foodnamejp' => "鳥サラダ",
+            'price' => "580",
+            'image' => "goiga.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "3",
+            'foodnamevn' => "Gà nướng",
+            'foodnamejp' => "鳥焼き",
+            'price' => "580",
+            'image' => "ganuong.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "3",
+            'foodnamevn' => "Gà roti",
+            'foodnamejp' => "鳥ニンニクソース炒め",
+            'price' => "580",
+            'image' => "gachienmam.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "3",
+            'foodnamevn' => "Gà rang lá chanh",
+            'foodnamejp' => "手羽先揚げ",
+            'price' => "580",
+            'image' => "garoti.png",
             'status' => "1",
         ]);
 
@@ -229,16 +272,52 @@ class DatabaseSeeder extends Seeder
             'foodnamevn' => "Vịt hon",
             'foodnamejp' => "ダックレモングラス煮込み",
             'price' => "780",
-            'image' => "images/L1VeU3Fjv0ZWE5fltd2EfMV0xA5dfaT5b9d7my2g.jpeg",
+            'image' => "vithon.png",
             'status' => "1",
         ]);
 
         DB::table('foods')->insert([
-            'foodtype' => "2",
-            'foodnamevn' => "Mẹt gà",
-            'foodnamejp' => "鳥セット",
-            'price' => "1980",
-            'image' => "images/lsJLWkX73XsU8fz44hxHQ0Z7Hm58ZTCLu3ZCdl5U.jpeg",
+            'foodtype' => "4",
+            'foodnamevn' => "Vịt nướng nguyên con",
+            'foodnamejp' => "ダック焼き一匹",
+            'price' => "2800",
+            'image' => "vitnguyencon.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "4",
+            'foodnamevn' => "Vịt hai màu",
+            'foodnamejp' => "ダックセット",
+            'price' => "2800",
+            'image' => "vithaimau.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "4",
+            'foodnamevn' => "Vịt nướng",
+            'foodnamejp' => "ダック焼き",
+            'price' => "780",
+            'image' => "vitnuong.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "4",
+            'foodnamevn' => "Gỏi vịt",
+            'foodnamejp' => "ダックサラダ",
+            'price' => "890",
+            'image' => "goivit.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "4",
+            'foodnamevn' => "Vịt luộc",
+            'foodnamejp' => "ダック茹で",
+            'price' => "780",
+            'image' => "vitluoc.png",
             'status' => "1",
         ]);
 
@@ -247,16 +326,44 @@ class DatabaseSeeder extends Seeder
             'foodnamevn' => "Típ bò",
             'foodnamejp' => "牛煮込み",
             'price' => "780",
-            'image' => "images/MxZbXkwHcFkqCnrqQe2zmjeUz0dO7MPkQvQ2D2AG.jpeg",
+            'image' => "tipbo.png",
+            'status' => "1",
+        ]);
+
+
+        DB::table('foods')->insert([
+            'foodtype' => "5",
+            'foodnamevn' => "Bò bóp thấu",
+            'foodnamejp' => "牛サラダ",
+            'price' => "680",
+            'image' => "bobopthau.png",
             'status' => "1",
         ]);
 
         DB::table('foods')->insert([
-            'foodtype' => "1",
-            'foodnamevn' => "Ốc om chuối",
-            'foodnamejp' => "タニシバナナ煮込み",
-            'price' => "850",
-            'image' => "images/o4Zc1b5ZujrhaXB8fUa78Bp50pLwzZk7exHgwFup.jpeg",
+            'foodtype' => "5",
+            'foodnamevn' => "Bò cuốn lá cải",
+            'foodnamejp' => "牛野菜巻き焼き",
+            'price' => "680",
+            'image' => "bocuonlacai.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "5",
+            'foodnamevn' => "Bò xào cần",
+            'foodnamejp' => "牛セロリ炒め",
+            'price' => "680",
+            'image' => "boxaocan.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "5",
+            'foodnamevn' => "Bò xào dưa cải",
+            'foodnamejp' => "牛セロリ炒め",
+            'price' => "680",
+            'image' => "boxaocaichua.png",
             'status' => "1",
         ]);
 
@@ -265,16 +372,107 @@ class DatabaseSeeder extends Seeder
             'foodnamevn' => "Thịt heo nướng",
             'foodnamejp' => "豚焼肉",
             'price' => "480",
-            'image' => "images/O9DgaXcvoYWdVt8Y1Fhaq4kEMIRmXb5TL5IYxPq6.jpeg",
+            'image' => "thitheonuong.png",
+            'status' => "1",
+        ]);
+
+
+        DB::table('foods')->insert([
+            'foodtype' => "6",
+            'foodnamevn' => "Đuôi heo hon",
+            'foodnamejp' => "豚テールレモングラス煮込み",
+            'price' => "540",
+            'image' => "duoiheo.png",
             'status' => "1",
         ]);
 
         DB::table('foods')->insert([
-            'foodtype' => "8",
-            'foodnamevn' => "Phở gà",
-            'foodnamejp' => "鳥フォー",
+            'foodtype' => "6",
+            'foodnamevn' => "Sụn heo xào cải chua",
+            'foodnamejp' => "高菜漬け軟骨炒め",
+            'price' => "580",
+            'image' => "sunheocaichua.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "6",
+            'foodnamevn' => "Dưa cải xào ba chỉ",
+            'foodnamejp' => "高菜漬け豚炒め",
+            'price' => "580",
+            'image' => "bachixaocaichua.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "6",
+            'foodnamevn' => "Lòng heo xào cải chua",
+            'foodnamejp' => "高菜漬け内臓炒め",
+            'price' => "580",
+            'image' => "longxaodua.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "6",
+            'foodnamevn' => "Tai heo bóp",
+            'foodnamejp' => "豚耳サラダ",
+            'price' => "580",
+            'image' => "goiheo.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "6",
+            'foodnamevn' => "Nồi trường",
+            'foodnamejp' => "豚の小袋",
             'price' => "680",
-            'image' => "images/OEvjhRv4pdYJsQBc9ieoJzrsXvq84EQKLeQvuGRC.jpeg",
+            'image' => "noituong.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "6",
+            'foodnamevn' => "Diềm nướng",
+            'foodnamejp' => "豚ハラミ焼肉",
+            'price' => "580",
+            'image' => "diemnuong.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "7",
+            'foodnamevn' => "Sò lụa xào sả",
+            'foodnamejp' => "アサリレモングラス炒め",
+            'price' => "480",
+            'image' => "soluasa.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "7",
+            'foodnamevn' => "Sò lụa xào tỏi",
+            'foodnamejp' => "アサリニンニク炒め",
+            'price' => "480",
+            'image' => "luatoi.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "7",
+            'foodnamevn' => "Sò lụa sa tế",
+            'foodnamejp' => "アサリチリソース炒め",
+            'price' => "480",
+            'image' => "luasate.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "7",
+            'foodnamevn' => "Râu mực chiên",
+            'foodnamejp' => "げそから",
+            'price' => "480",
+            'image' => "raumuc.png",
             'status' => "1",
         ]);
 
@@ -283,25 +481,79 @@ class DatabaseSeeder extends Seeder
             'foodnamevn' => "Tôm xóc tỏi",
             'foodnamejp' => "海老ニンニクソース炒め",
             'price' => "980",
-            'image' => "images/qRzh4H8njNKOVQ38weT1lDZfRUqXSmJmCu6L9wEL.jpeg",
+            'image' => "tomxoctoi.png",
             'status' => "1",
         ]);
 
         DB::table('foods')->insert([
-            'foodtype' => "5",
-            'foodnamevn' => "Bò bóp thấu",
-            'foodnamejp' => "牛サラダ",
-            'price' => "680",
-            'image' => "images/t99MTaHPL7pw50FT8aGechYG3NZniwvzslo6yHQ2.jpeg",
+            'foodtype' => "7",
+            'foodnamevn' => "Tôm nướng muối ớt",
+            'foodnamejp' => "海老塩焼き",
+            'price' => "480",
+            'image' => "tomnuong.png",
             'status' => "1",
         ]);
 
         DB::table('foods')->insert([
-            'foodtype' => "10",
-            'foodnamevn' => "Gỏi bò",
-            'foodnamejp' => "牛サラダ",
+            'foodtype' => "7",
+            'foodnamevn' => "Mực hấp",
+            'foodnamejp' => "イカ蒸",
             'price' => "680",
-            'image' => "images/t99MTaHPL7pw50FT8aGechYG3NZniwvzslo6yHQ2.jpeg",
+            'image' => "muchap.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "8",
+            'foodnamevn' => "Bún thịt nướng",
+            'foodnamejp' => "焼肉ビーフン",
+            'price' => "680",
+            'image' => "bunthitnuong.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "8",
+            'foodnamevn' => "Bún bò giò",
+            'foodnamejp' => "ブンボー",
+            'price' => "780",
+            'image' => "bunbogio.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "8",
+            'foodnamevn' => "Bún bò",
+            'foodnamejp' => "ブンボー",
+            'price' => "780",
+            'image' => "bunbo.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "8",
+            'foodnamevn' => "Phở gà, Phở gà",
+            'foodnamejp' => "鳥フォー",
+            'price' => "680",
+            'image' => "phoga.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "8",
+            'foodnamevn' => "Mì Quảng",
+            'foodnamejp' => "ミクアン",
+            'price' => "680",
+            'image' => "miquang.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "8",
+            'foodnamevn' => "Bánh canh",
+            'foodnamejp' => "ベトナムうどん",
+            'price' => "680",
+            'image' => "banhcanh.png",
             'status' => "1",
         ]);
 
@@ -310,7 +562,224 @@ class DatabaseSeeder extends Seeder
             'foodnamevn' => "Cơm chiên",
             'foodnamejp' => "チャーハン",
             'price' => "680",
-            'image' => "images/tB0XYiCXOopGtAZsBYmQ1G544yHRRgJGcX56eZRh.jpeg",
+            'image' => "comchien.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "9",
+            'foodnamevn' => "Cơm rang dưa bò",
+            'foodnamejp' => "高菜漬け牛肉チャーハン",
+            'price' => "780",
+            'image' => "comduabo.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "9",
+            'foodnamevn' => "Mì xào hải sản",
+            'foodnamejp' => "海鮮焼きそば",
+            'price' => "680",
+            'image' => "mixaohaisan.png",
+            'status' => "1",
+        ]);
+
+
+        DB::table('foods')->insert([
+            'foodtype' => "10",
+            'foodnamevn' => "Gỏi sứa",
+            'foodnamejp' => "クラゲサラダ",
+            'price' => "780",
+            'image' => "goisua.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "10",
+            'foodnamevn' => "Gỏi thập cẩm",
+            'foodnamejp' => "盛り合わせサラダ",
+            'price' => "680",
+            'image' => "goithapcam.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "10",
+            'foodnamevn' => "Gỏi xoài",
+            'foodnamejp' => "マンゴーサラダ",
+            'price' => "890",
+            'image' => "goixoai.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "10",
+            'foodnamevn' => "Xa lát trộn giấm",
+            'foodnamejp' => "サラダ",
+            'price' => "380",
+            'image' => "xalachgiam.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "10",
+            'foodnamevn' => "Rau muống xào tỏi",
+            'foodnamejp' => "空芯菜炒め",
+            'price' => "380",
+            'image' => "raumuong.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "10",
+            'foodnamevn' => "Cải xào tỏi",
+            'foodnamejp' => "小松菜炒め",
+            'price' => "380",
+            'image' => "caixao.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "11",
+            'foodnamevn' => "Bò nhúng dấm",
+            'foodnamejp' => "牛しゃぶしゃぶ酢だし",
+            'price' => "1280",
+            'image' => "bonhungdam.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "12",
+            'foodnamevn' => "Gỏi cuốn",
+            'foodnamejp' => "春巻き",
+            'price' => "390",
+            'image' => "goicuon.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "12",
+            'foodnamevn' => "Nem rán",
+            'foodnamejp' => "揚げ春巻き",
+            'price' => "390",
+            'image' => "nemran.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "12",
+            'foodnamevn' => "Xôi chiên tôm thịt",
+            'foodnamejp' => "海老肉おこわ揚げ",
+            'price' => "580",
+            'image' => "xoithit.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "12",
+            'foodnamevn' => "Xôi chiên kho quẹt",
+            'foodnamejp' => "おこわ揚げ",
+            'price' => "480",
+            'image' => "xoiquet.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "12",
+            'foodnamevn' => "Bắp xào bơ tỏi",
+            'foodnamejp' => "コーンバター",
+            'price' => "380",
+            'image' => "bapxao.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "12",
+            'foodnamevn' => "Đậu rán tẩm hành",
+            'foodnamejp' => "豆腐揚げ",
+            'price' => "380",
+            'image' => "dautamhanh.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "12",
+            'foodnamevn' => "Đậu rán mắm tôm",
+            'foodnamejp' => "豆腐揚げ、マムトム",
+            'price' => "380",
+            'image' => "dauranmamtom.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "12",
+            'foodnamevn' => "Trứng gà lộn",
+            'foodnamejp' => "ベトナム卵ソース炒め",
+            'price' => "200",
+            'image' => "galon.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "12",
+            'foodnamevn' => "Ếch chiên",
+            'foodnamejp' => "カエル揚げ",
+            'price' => "780",
+            'image' => "echchien.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "12",
+            'foodnamevn' => "Ếch sả ớt",
+            'foodnamejp' => "カエルレモングラス",
+            'price' => "780",
+            'image' => "echsaot.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "12",
+            'foodnamevn' => "Dê hon",
+            'foodnamejp' => "ヤギレモングラス煮込み",
+            'price' => "850",
+            'image' => "dehon.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "12",
+            'foodnamevn' => "Khoai tây chiên",
+            'foodnamejp' => "フライドポテト",
+            'price' => "380",
+            'image' => "khoaitaychien.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "12",
+            'foodnamevn' => "Gà vịt bóp",
+            'foodnamejp' => "鳥ダックサラダ",
+            'price' => "1300",
+            'image' => "goigavit.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "12",
+            'foodnamevn' => "Cá chỉ vàng",
+            'foodnamejp' => "あじ焼き",
+            'price' => "380",
+            'image' => "cachivang.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "12",
+            'foodnamevn' => "Bún",
+            'foodnamejp' => "ブン",
+            'price' => "200",
+            'image' => "bunkhong.png",
             'status' => "1",
         ]);
 
@@ -319,16 +788,16 @@ class DatabaseSeeder extends Seeder
             'foodnamevn' => "Xôi trắng",
             'foodnamejp' => "おこわ",
             'price' => "200",
-            'image' => "images/WHe2uixyGSKX6zB78VmIPGdnFChaHpFT14Dr3Wpr.jpeg",
+            'image' => "xoitrang.png",
             'status' => "1",
         ]);
 
         DB::table('foods')->insert([
-            'foodtype' => "8",
-            'foodnamevn' => "Phở bò",
-            'foodnamejp' => "牛フォー",
-            'price' => "680",
-            'image' => "images/YJ8VxRf0ij3jwfuGYTlhreeEskPJaqnjXMmPMGTw.jpeg",
+            'foodtype' => "12",
+            'foodnamevn' => "Cơm trắng",
+            'foodnamejp' => "ご飯",
+            'price' => "150",
+            'image' => "comtrang.png",
             'status' => "1",
         ]);
 
@@ -360,6 +829,117 @@ class DatabaseSeeder extends Seeder
 
         DB::table('drink_types')->insert([
             'name' => "Rượu",
+        ]);
+
+        DB::table('tables')->insert([
+            'name' => "1",
+            'number' => "1",
+            'status' => "1",
+        ]);
+
+        DB::table('tables')->insert([
+            'name' => "1",
+            'number' => "2",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "1",
+            'number' => "3",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "1",
+            'number' => "4",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "1",
+            'number' => "5",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "1",
+            'number' => "6",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "1",
+            'number' => "7",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "1",
+            'number' => "8",
+            'status' => "1",
+        ]);
+
+
+
+        DB::table('tables')->insert([
+            'name' => "2",
+            'number' => "1",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "2",
+            'number' => "2",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "2",
+            'number' => "3",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "2",
+            'number' => "4",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "2",
+            'number' => "5",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "2",
+            'number' => "6",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "2",
+            'number' => "7",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "2",
+            'number' => "8",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "2",
+            'number' => "9",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "2",
+            'number' => "10",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "2",
+            'number' => "11",
+            'status' => "1",
+        ]);
+        DB::table('tables')->insert([
+            'name' => "2",
+            'number' => "12",
+            'status' => "1",
+        ]);
+
+        DB::table('tables')->insert([
+            'name' => "3",
+            'number' => "1",
+            'status' => "1",
         ]);
 
     }

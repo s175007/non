@@ -181,7 +181,9 @@ img {
 }
 
 .nav__logo {
-    font-weight: var(--font-bold);
+    height: auto;
+    width: 65px;
+    padding-top: 7px;
 }
 
 .nav__cart {
@@ -269,7 +271,7 @@ img {
     padding: 0.4rem;
     font-size: var(--small-font-size);
     font-weight: var(--font-semi);
-    border: none:
+    border: none;
 }
 
 .button:hover {
