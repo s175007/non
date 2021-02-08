@@ -27,12 +27,12 @@
                                 <div class="detail-box">
                                     <!--type-------->
                                     <div class="type">
-                                        <a href="">{{ $food->foodnamevn }}</a>
+                                        <a>{{ $food->foodnamevn }}</a>
                                         <span>{{ $food->foodnamejp }}</span>
                                     </div>
                                     <!--price-------->
                                     @if ($food->status)
-                                        <a href="" class="price">{{ $food->price }}円</a>
+                                        <a class="price">{{ $food->price }}円</a>
                                     @else
                                         <a style="color: #d2321e">Hết</a>
                                     @endif
