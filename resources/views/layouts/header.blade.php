@@ -48,8 +48,8 @@
                     <li class="nav__item"><a key="admin" href="{{ route('admins.login') }}" class="nav__link tr">Quản lí</a></li>
                     <li class="nav__item">
                         <div class="lang_switcher">
-                            <button id="vn" class="lang">VN</button>
-                            <button id="jp" class="lang">JP</button>
+                            <button id="vn" class="lang nav__button">VN</button>
+                            <button id="jp" class="lang nav__button">JP</button>
                         </div>
                     </li>
                     <li class="nav__item">

@@ -263,6 +263,15 @@ img {
     transition: .3s;
 }
 
+.nav__button{
+    background-color: var(--first-color);
+    color: #FAFAFF;
+    padding: 0.4rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi);
+    border: none:
+}
+
 .button:hover {
     background-color: var(--first-color-alt);
 }

@@ -19,6 +19,7 @@
 .lightSlider {
     overflow: hidden;
     margin: 0;
+    height: 480px;
 }
 .lSSlideWrapper {
     max-width: 100%;
@@ -96,7 +97,7 @@
     transition: all 0.5s linear 0s;
 }
 .lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
-    background-color: #428bca;
+    background-color: #d2321e;
 }
 .lSSlideOuter .media {
     opacity: 0.8;
