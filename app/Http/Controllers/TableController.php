@@ -16,7 +16,7 @@ class TableController extends Controller
      */
     public function index()
     {
-        $tables = Table::orderBy('id', 'DESC')->get();
+        $tables = Table::orderBy('id', 'ASC')->get();
         // return $tables;
         return view('tables/index', ['tables' => $tables]);
     }

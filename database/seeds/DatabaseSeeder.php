@@ -262,7 +262,7 @@ class DatabaseSeeder extends Seeder
             'foodtype' => "3",
             'foodnamevn' => "Gà rang lá chanh",
             'foodnamejp' => "手羽先揚げ",
-            'price' => "580",
+            'price' => "680",
             'image' => "garoti.png",
             'status' => "1",
         ]);
@@ -716,7 +716,7 @@ class DatabaseSeeder extends Seeder
             'foodnamevn' => "Trứng gà lộn",
             'foodnamejp' => "ベトナム卵ソース炒め",
             'price' => "200",
-            'image' => "galon.png",
+            'image' => "trunggalon.png",
             'status' => "1",
         ]);
 
