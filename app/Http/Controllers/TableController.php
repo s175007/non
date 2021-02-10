@@ -101,6 +101,8 @@ class TableController extends Controller
     {
         $table = Table::find($id);
         $table->status = $status;
+        $table->id = $id;
+        // return $table;
         $table->save();
 
         return Redirect::route('admin.tables.index')->with(['message' => 'Cập nhật thành công']);

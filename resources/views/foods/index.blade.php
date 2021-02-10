@@ -48,7 +48,7 @@
             </tbody>
             @forelse ($foods as $food)
                 <tr>
-                    <th scope="row">{{ $loop->index }}</th>
+                    <th scope="row">{{ $food->id }}</th>
                     <td>
                        {{ $food->foodTypes->name}}
                     </td>
