@@ -16,7 +16,8 @@ class TableController extends Controller
      */
     public function index()
     {
-        $tables = Table::all();
+        $tables = Table::orderBy('id', 'DESC')->get();
+        // return $tables;
         return view('tables/index', ['tables' => $tables]);
     }
 

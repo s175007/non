@@ -63,7 +63,7 @@ Route::get('/posts/{id}', 'PostController@show')->name('posts.show');
 Route::get('/foods/create', 'FoodController@create')->name('admin.foods.create');
 
 Route::get('/menu', function () {
-    $food_types = FoodType::with('foods')->get();
+    $food_types = FoodType::orderBy('id', 'ASC')->with('foods')->get();
 
     return view('menu')->with('food_types', $food_types);
 })->name('menu');
@@ -85,7 +85,7 @@ Route::get('/drink', function () {
 })->name('drink');
 
 Route::get('/table', function () {
-    $tables = Table::all();
+    $tables = Table::orderBy('id', 'ASC')->get();
 
     return view('table')->with('tables', $tables);
 })->name('table');
