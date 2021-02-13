@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data__theme="light">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -119,28 +119,7 @@
 
         <p class="footer__copy">&#169; 2020 copyright all right reserved</p>
     </footer>
-
-    <script>
-        var checkbox = document.querySelector("input[name=theme]");
-
-        checkbox.addEventListener('change', function() {
-            if (this.checked) {
-                trans()
-                document.documentElement.setAttribute('data-theme', 'dark')
-            } else {
-                trans()
-                document.documentElement.setAttribute('data-theme', 'light')
-            }
-        });
-
-        let trans = () => {
-            document.documentElement.classList.add('transition');
-            window.setTimeout(() => {
-                document.documentElement.classList.remove('transition')
-            }, 1000)
-        }
-
-    </script>
+    <script src="{{ asset('js/theme.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
 
