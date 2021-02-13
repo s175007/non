@@ -2,24 +2,27 @@ let darkMode = localStorage.getItem('data-theme');
 const checkbox = document.querySelector("input[name=theme]");
 
 const enableDarkMode = () => {
+    // 1. Add the class to the body
     document.documentElement.setAttribute('data-theme', 'dark')
-    console.log('dark')
-    localStorage.setItem('data-them', 'dark')
+
+    // 2. Update darkMode in localStorage
+    localStorage.setItem('data-theme', 'dark');
 }
 
 const disableDarkMode = () => {
+    // 1. Remove the class from the body
     document.documentElement.setAttribute('data-theme', 'light')
-    console.log('light')
-    localStorage.setItem('data-them', 'light')
+    // 2. Update darkMode in localStorage
+    localStorage.setItem('data-theme', 'light');
 }
 
-if(darkMode === 'dark') {
+if (darkMode === 'dark') {
     enableDarkMode()
 }
 
-checkbox.addEventListener('change', function() {
-    darkMode = localStorage.getItem('data-theme')
-    if (darkMode !== 'dark') {
+checkbox.addEventListener( 'change', () => {
+    darkMode = localStorage.getItem('data-theme');
+    if(darkMode !== 'dark') {
         trans()
         enableDarkMode()
     } else {
