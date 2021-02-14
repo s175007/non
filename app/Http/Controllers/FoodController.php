@@ -19,7 +19,7 @@ class FoodController extends Controller
      */
     public function index()
     {
-        $foods = Food::with('foodTypes')->get();
+        $foods = Food::orderBy('id', 'ASC')->with('foodTypes')->get();
         // return $drinks;
         return view('foods/index', ['foods' => $foods]);
     }

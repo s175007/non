@@ -67,7 +67,6 @@
                                         @switch($table->status)
                                             @case(1)
                                             <p>Trống</p>
-                                            <a href="" class="collection__view">Liên hệ</a>
 
                                             @break
                                             @case(2)
