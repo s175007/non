@@ -834,7 +834,7 @@ class DatabaseSeeder extends Seeder
             'foodnamevn' => "Lẫu thập cẩm",
             'foodnamejp' => "盛り合わせ鍋",
             'price' => "1980",
-            'image' => "Lauthapcam.png",
+            'image' => "Lautomthai.png",
             'status' => "1",
         ]);
 
@@ -843,7 +843,7 @@ class DatabaseSeeder extends Seeder
             'foodnamevn' => "Lẫu tôm thái",
             'foodnamejp' => "海老鍋",
             'price' => "1980",
-            'image' => "Lautomthai.png",
+            'image' => "Lauthapcam.png",
             'status' => "1",
         ]);
 
