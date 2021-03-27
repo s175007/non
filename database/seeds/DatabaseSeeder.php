@@ -70,6 +70,10 @@ class DatabaseSeeder extends Seeder
             'name' => "Các món khác",
         ]);
 
+        DB::table('food_types')->insert([
+            'name' => "Tráng miệng",
+        ]);
+
         //Thêm thức ăn
 
         DB::table('foods')->insert([
@@ -1020,6 +1024,15 @@ class DatabaseSeeder extends Seeder
             'foodnamejp' => "ご飯",
             'price' => "150",
             'image' => "comtrang.png",
+            'status' => "1",
+        ]);
+
+        DB::table('foods')->insert([
+            'foodtype' => "13",
+            'foodnamevn' => "Chè khúc bạch",
+            'foodnamejp' => "チェー",
+            'price' => "380",
+            'image' => "Chekhucbach.png",
             'status' => "1",
         ]);
 
